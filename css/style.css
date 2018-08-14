@@ -1,5 +1,4 @@
 body {
-	/*position: absolute;*/
 	width: 100%;
 	background: #fff2f4;
 	color: rgb(120,90,90);
@@ -74,6 +73,8 @@ hr {
 
 }
 
+
+
 /* ________________HEADER SETTINGS________________________ */
 
 
@@ -112,30 +113,29 @@ hr {
 
 .banner h1 a {
 	color: rgb(160,120,120);
+	transition: all 0.1s ease-out;
 }
 
-h1 span {
+.banner h1 a span {
 	border: 1px solid beige;
 	padding: 10px 30px 5px 30px;
 	line-height: 75px;
 	border-radius: 4px;
+	transition: all 0.1s ease-out;
 
 }
 
 .banner:hover h1 a {
 	color: rgba(236,234,210,0.99);
 	cursor: default;
+	transition: all 0.15s ease-in;
 }
 
-/*.banner p {
-	ackground: yellow;
-	width: calc(100% - 15px);
-	height: 50px;
-	padding-right: 15px;
-	font-size: 24px;
-	line-height: 56px;
-	text-align: right;
-}*/
+.banner:hover h1 a span {
+	border: 1px solid rgba(160,120,120,0.8);
+	transition: all 0.15s ease-in;
+}
+
 
 
 /* ________________SECTION SETTINGS_______________________ */
@@ -162,23 +162,20 @@ h1 span {
 .aside {
 	float: left;
 	width: 45%;
-	/*min-height: 500px;*/
 	margin: 0px 1% 20px 3%;
 	color: rgb(120,90,90);
 	background: #fff4f2;
 	border-radius: 8px;
 	box-shadow: 0px 0px 12px 0px rgba(115,120,125,0.6); /*rgba(205,205,195,0.6);*/
 	border: 1px solid #bbbbfa;
+	transition: all 0.15s ease-in;
 }
 
 .aside:hover {
 	box-shadow: 0px 0px 12px 0px rgba(220,85,0,0.6); /*rgba(115,120,125,0.6);*/
 	border: 1px solid rgba(222,90,1,0.6); /*#fffeef;*/
 	background: rgba(256,254,240,0.69); /*#fffeef;*/
-}
-
-.aside:hover h2 {
-	color: rgba(246,244,220,0.99);
+	transition: all 0.25s ease-in;
 }
 
 .aside h2 {
@@ -193,13 +190,13 @@ h1 span {
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 	background: #bbbbfa;
+	transition: all 0.15s ease-in;
 }
 
-/*.aside:hover h4 {
-	color: beige;
-	background: #bbbbfa;
-	border-bottom: 1px solid #fffeef;
-}*/
+.aside:hover h2 {
+	color: rgba(246,244,220,0.99);
+	transition: all 0.15s ease-in;
+}
 
 .aside ul {
 	width: 100%;
@@ -214,7 +211,6 @@ h1 span {
 }
 
 .aside ul li {
-	/*overflow: hidden;*/
 	height: 25px;
 	margin: 0px 0px;
 	padding: 0px 0px;
@@ -226,21 +222,19 @@ h1 span {
 }
 
 .aside ul li a {
-	/*text-decoration: underline;*/
 	font-weight: 400;
 	color: rgb(120,90,90);
 	transition: all 0.4s ease-out;
 	/*pointer-events: none;*/
 	/*-moz-animation: turn 8s infinite linear 1s;*/
-	pointer-events: default;
 }
 
 .aside ul li a:hover {
-	/*text-decoration: underline;*/
-	font-weight: 800;
-	color: rgb(160,90,90);
+	/*font-weight: 800;*/
+	color: rgba(160,90,90,0.9);
+	font-size: 26px;
 	/*transform: rotate(360deg);*/
-	transition: all 0s ease-out;
+	transition: all 0.2s ease-in;
 	/*-moz-animation: turn 2s 1 linear 0s;*/
 }
 
